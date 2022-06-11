@@ -7,6 +7,7 @@
 #include <byteswap.h>
 #include <infiniband/verbs.h>
 #include <arpa/inet.h>
+#include <stdbool.h>
 
 #define IB_MTU			IBV_MTU_4096
 #define IB_PORT			1
@@ -32,6 +33,8 @@ static inline uint64_t ntohll (uint64_t x) {return x; }
 struct QPInfo {
     uint16_t lid;
     uint32_t qp_num;
+    long long interface_id;
+    long long subnet_prefix;
 }__attribute__ ((packed));
 
 struct RemoteAddr {
@@ -45,7 +48,7 @@ enum MsgType {
     MSG_CTL_STOP,
 };
 
-int modify_qp_to_rts (struct ibv_qp *qp, uint32_t qp_num, uint16_t lid);
+int modify_qp_to_rts (struct ibv_qp *qp, struct QPInfo* remote_qpinfo, bool roce_flag);
 
 int post_send (uint32_t req_size, uint32_t lkey, uint64_t wr_id, 
 	       uint32_t imm_data, struct ibv_qp *qp, char *buf);

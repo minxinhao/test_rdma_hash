@@ -4,7 +4,7 @@
 
 ************ Configuraion ************
 
-is_server                 = false
+is_server                 = true
 msg_size                  = 64
 num_concurr_msgs          = 1000
 sock_port                 = 9999
@@ -13,7 +13,7 @@ roce_flag                 = 1
 ************ End of Configuraion ************
 
 
-************ IB Config ************
+************ Start of IB Config ************
 
 
 ================ Run Finished ================

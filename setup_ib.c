@@ -41,6 +41,8 @@ int connect_qp_server ()
     /* init local qp_info */
 	local_qp_info.lid	= ib_res.port_attr.lid; 
 	local_qp_info.qp_num = ib_res.qp->qp_num;
+    local_qp_info.interface_id = ib_res.gid.global.interface_id;
+    local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
     local_addr.remote_addr = (uint64_t)ib_res.mr->addr;
     local_addr.rkey = ib_res.mr->rkey;
 
@@ -65,7 +67,7 @@ int connect_qp_server ()
 
     /* change send QP state to RTS */
     log (LOG_SUB_HEADER, "Start of IB Config");
-	ret = modify_qp_to_rts (ib_res.qp, remote_qp_info.qp_num, remote_qp_info.lid);
+	ret = modify_qp_to_rts (ib_res.qp, &remote_qp_info,config_info.roce_flag);
 	check (ret == 0, "Failed to modify qp to rts");
 
 	log ("\tqp[%"PRIu32"] <-> qp[%"PRIu32"]", ib_res.qp->qp_num, remote_qp_info.qp_num);
@@ -110,6 +112,8 @@ int connect_qp_client ()
 
 	local_qp_info.lid     = ib_res.port_attr.lid; 
 	local_qp_info.qp_num  = ib_res.qp->qp_num; 
+    local_qp_info.interface_id = ib_res.gid.global.interface_id;
+    local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
     local_addr.remote_addr = (uint64_t)ib_res.mr->addr;
     local_addr.rkey = ib_res.mr->rkey;
 
@@ -139,7 +143,7 @@ int connect_qp_client ()
     int j        = 0;
     log (LOG_SUB_HEADER, "IB Config");
 
-	ret = modify_qp_to_rts (ib_res.qp, remote_qp_info.qp_num, remote_qp_info.lid);
+	ret = modify_qp_to_rts (ib_res.qp, &remote_qp_info,config_info.roce_flag);
 	check (ret == 0, "Failed to modify qp to rts");
     
 	log ("\tqp[%"PRIu32"] <-> qp[%"PRIu32"]", ib_res.qp->qp_num, remote_qp_info.qp_num);
@@ -188,6 +192,12 @@ int setup_ib ()
     ret = ibv_query_port(ib_res.ctx, IB_PORT, &ib_res.port_attr);
     check(ret == 0, "Failed to query IB port information.");
     
+    /* query gid */
+    if(config_info.roce_flag){
+        ret = ibv_query_gid(ib_res.ctx, IB_PORT, 0, &ib_res.gid);
+        check(ret == 0, "Failed to query GID information for ROCE Network.");
+    }
+
     /* register mr */
     /* set the buf_size twice as large as msg_size * num_concurr_msgs */
     /* the recv buffer occupies the first half while the sending buffer */

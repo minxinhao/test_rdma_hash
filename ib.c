@@ -1,6 +1,5 @@
 #include <arpa/inet.h>
 #include <unistd.h>
-
 #include "ib.h"
 #include "debug.h"
 #define MAX_POST_LIST 2048
@@ -14,10 +13,10 @@ uint64_t get_wr_id(){
     return ++wr_id_cnt;
 }
 
-int modify_qp_to_rts (struct ibv_qp *qp, uint32_t target_qp_num, uint16_t target_lid)
+int modify_qp_to_rts (struct ibv_qp *qp, struct QPInfo* remote_qpinfo, bool roce_flag)
 {
     int ret = 0;
-
+	int rtr_flags;
     /* change QP state to INIT */
     {
 	struct ibv_qp_attr qp_attr = {
@@ -41,17 +40,27 @@ int modify_qp_to_rts (struct ibv_qp *qp, uint32_t target_qp_num, uint16_t target
 	struct ibv_qp_attr  qp_attr = {
 	    .qp_state           = IBV_QPS_RTR,
 	    .path_mtu           = IB_MTU,
-	    .dest_qp_num        = target_qp_num,
+	    .dest_qp_num        = remote_qpinfo->qp_num,
 	    .rq_psn             = 0,
 	    .max_dest_rd_atomic = 1,
 	    .min_rnr_timer      = 12,
 	    .ah_attr.is_global  = 0,
-	    .ah_attr.dlid       = target_lid,
+	    .ah_attr.dlid       = remote_qpinfo->lid,
 	    .ah_attr.sl         = IB_SL,
 	    .ah_attr.src_path_bits = 0,
 	    .ah_attr.port_num      = IB_PORT,
 	};
-	log_info("dest_qp_num:%u dlid:%u\n",target_qp_num,target_lid);
+	if(roce_flag){
+		qp_attr.ah_attr.is_global = 1;
+		qp_attr.ah_attr.dlid = 0;
+		qp_attr.ah_attr.grh.dgid.global.interface_id = remote_qpinfo->interface_id;
+		qp_attr.ah_attr.grh.dgid.global.subnet_prefix = remote_qpinfo->subnet_prefix;
+		qp_attr.ah_attr.grh.sgid_index = 0;
+		qp_attr.ah_attr.grh.hop_limit = 1;
+		log_message("ROCE:interface_id %llu subnet_prefix:%llu",remote_qpinfo->interface_id,remote_qpinfo->subnet_prefix);
+	}
+	
+	log_info("dest_qp_num:%u dlid:%u\n",remote_qpinfo->qp_num,remote_qpinfo->lid);
 	ret = ibv_modify_qp(qp, &qp_attr,
 			    IBV_QP_STATE | IBV_QP_AV |
 			    IBV_QP_PATH_MTU | IBV_QP_DEST_QPN |

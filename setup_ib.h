@@ -16,6 +16,7 @@ struct IBRes {
     struct ibv_srq              *srq;
     struct ibv_port_attr	 port_attr;
     struct ibv_device_attr	 dev_attr;
+    union ibv_gid gid;  // GID, used only for RoCE
     uint32_t	rkey;
     uint64_t	remote_addr;
 

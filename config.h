@@ -9,6 +9,7 @@ struct ConfigInfo {
     bool is_server;          /* if the current node is server */
     char *ip_address;         /* ip of server */
     char *sock_port;         /* socket port number */
+    bool roce_flag;         /* type of underlying net */
     
     int  msg_size;           /* the size of each echo message */
     int  num_concurr_msgs;   /* the number of messages can be sent concurrently */

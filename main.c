@@ -25,9 +25,11 @@ int main (int argc, char *argv[])
     config_info.is_server = !strcmp(argv[1],"server");
     config_info.ip_address = argv[2];
     config_info.sock_port = argv[3];
+    config_info.roce_flag = 1;
     config_info.pmem_path = argv[4];
     config_info.num_concurr_msgs = 1000;
     config_info.msg_size = 64;
+
 
     init_env();
 
