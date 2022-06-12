@@ -15,7 +15,7 @@ roce_flag                 = 1
 
 ************ IB Config ************
 
-	qp[12926] <-> qp[12925]
+	qp[12928] <-> qp[12927]
 
 ************ End of IB Config ************
 
@@ -23,7 +23,7 @@ roce_flag                 = 1
 ************ Run Client ************
 
 thread[0]: ready to send
-thread[0]: throughput = 363.653100 (MB/s)
+thread[0]: throughput = 341.911757 (MB/s)
 
 ================ Run Finished ================
 

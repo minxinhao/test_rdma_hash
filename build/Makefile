@@ -123,221 +123,275 @@ TEST_RDMA_HASH/fast:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/build
 .PHONY : TEST_RDMA_HASH/fast
 
-NVM.o: NVM.c.o
+NVM.o: NVM.cc.o
 
 .PHONY : NVM.o
 
 # target to build an object file
-NVM.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.c.o
-.PHONY : NVM.c.o
+NVM.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o
+.PHONY : NVM.cc.o
 
-NVM.i: NVM.c.i
+NVM.i: NVM.cc.i
 
 .PHONY : NVM.i
 
 # target to preprocess a source file
-NVM.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.c.i
-.PHONY : NVM.c.i
+NVM.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.i
+.PHONY : NVM.cc.i
 
-NVM.s: NVM.c.s
+NVM.s: NVM.cc.s
 
 .PHONY : NVM.s
 
 # target to generate assembly for a file
-NVM.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.c.s
-.PHONY : NVM.c.s
+NVM.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.s
+.PHONY : NVM.cc.s
 
-client.o: client.c.o
+client.o: client.cc.o
 
 .PHONY : client.o
 
 # target to build an object file
-client.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.c.o
-.PHONY : client.c.o
+client.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o
+.PHONY : client.cc.o
 
-client.i: client.c.i
+client.i: client.cc.i
 
 .PHONY : client.i
 
 # target to preprocess a source file
-client.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.c.i
-.PHONY : client.c.i
+client.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.i
+.PHONY : client.cc.i
 
-client.s: client.c.s
+client.s: client.cc.s
 
 .PHONY : client.s
 
 # target to generate assembly for a file
-client.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.c.s
-.PHONY : client.c.s
+client.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.s
+.PHONY : client.cc.s
 
-config.o: config.c.o
+config.o: config.cc.o
 
 .PHONY : config.o
 
 # target to build an object file
-config.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.c.o
-.PHONY : config.c.o
+config.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o
+.PHONY : config.cc.o
 
-config.i: config.c.i
+config.i: config.cc.i
 
 .PHONY : config.i
 
 # target to preprocess a source file
-config.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.c.i
-.PHONY : config.c.i
+config.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.cc.i
+.PHONY : config.cc.i
 
-config.s: config.c.s
+config.s: config.cc.s
 
 .PHONY : config.s
 
 # target to generate assembly for a file
-config.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.c.s
-.PHONY : config.c.s
+config.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.cc.s
+.PHONY : config.cc.s
 
-ib.o: ib.c.o
+ib.o: ib.cc.o
 
 .PHONY : ib.o
 
 # target to build an object file
-ib.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.c.o
-.PHONY : ib.c.o
+ib.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o
+.PHONY : ib.cc.o
 
-ib.i: ib.c.i
+ib.i: ib.cc.i
 
 .PHONY : ib.i
 
 # target to preprocess a source file
-ib.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.c.i
-.PHONY : ib.c.i
+ib.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.i
+.PHONY : ib.cc.i
 
-ib.s: ib.c.s
+ib.s: ib.cc.s
 
 .PHONY : ib.s
 
 # target to generate assembly for a file
-ib.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.c.s
-.PHONY : ib.c.s
+ib.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.s
+.PHONY : ib.cc.s
 
-main.o: main.c.o
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.c.o
-.PHONY : main.c.o
+main.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.c.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.c.i
-.PHONY : main.c.i
+main.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.c.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.c.s
-.PHONY : main.c.s
+main.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.cc.s
+.PHONY : main.cc.s
 
-server.o: server.c.o
+server.o: server.cc.o
 
 .PHONY : server.o
 
 # target to build an object file
-server.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.c.o
-.PHONY : server.c.o
+server.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o
+.PHONY : server.cc.o
 
-server.i: server.c.i
+server.i: server.cc.i
 
 .PHONY : server.i
 
 # target to preprocess a source file
-server.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.c.i
-.PHONY : server.c.i
+server.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.i
+.PHONY : server.cc.i
 
-server.s: server.c.s
+server.s: server.cc.s
 
 .PHONY : server.s
 
 # target to generate assembly for a file
-server.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.c.s
-.PHONY : server.c.s
+server.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.s
+.PHONY : server.cc.s
 
-setup_ib.o: setup_ib.c.o
+setup_ib.o: setup_ib.cc.o
 
 .PHONY : setup_ib.o
 
 # target to build an object file
-setup_ib.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.c.o
-.PHONY : setup_ib.c.o
+setup_ib.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o
+.PHONY : setup_ib.cc.o
 
-setup_ib.i: setup_ib.c.i
+setup_ib.i: setup_ib.cc.i
 
 .PHONY : setup_ib.i
 
 # target to preprocess a source file
-setup_ib.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.c.i
-.PHONY : setup_ib.c.i
+setup_ib.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.i
+.PHONY : setup_ib.cc.i
 
-setup_ib.s: setup_ib.c.s
+setup_ib.s: setup_ib.cc.s
 
 .PHONY : setup_ib.s
 
 # target to generate assembly for a file
-setup_ib.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.c.s
-.PHONY : setup_ib.c.s
+setup_ib.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.s
+.PHONY : setup_ib.cc.s
 
-sock.o: sock.c.o
+sock.o: sock.cc.o
 
 .PHONY : sock.o
 
 # target to build an object file
-sock.c.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.c.o
-.PHONY : sock.c.o
+sock.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o
+.PHONY : sock.cc.o
 
-sock.i: sock.c.i
+sock.i: sock.cc.i
 
 .PHONY : sock.i
 
 # target to preprocess a source file
-sock.c.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.c.i
-.PHONY : sock.c.i
+sock.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.i
+.PHONY : sock.cc.i
 
-sock.s: sock.c.s
+sock.s: sock.cc.s
 
 .PHONY : sock.s
 
 # target to generate assembly for a file
-sock.c.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.c.s
-.PHONY : sock.c.s
+sock.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.s
+.PHONY : sock.cc.s
+
+util/farmhash.o: util/farmhash.cc.o
+
+.PHONY : util/farmhash.o
+
+# target to build an object file
+util/farmhash.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o
+.PHONY : util/farmhash.cc.o
+
+util/farmhash.i: util/farmhash.cc.i
+
+.PHONY : util/farmhash.i
+
+# target to preprocess a source file
+util/farmhash.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.i
+.PHONY : util/farmhash.cc.i
+
+util/farmhash.s: util/farmhash.cc.s
+
+.PHONY : util/farmhash.s
+
+# target to generate assembly for a file
+util/farmhash.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.s
+.PHONY : util/farmhash.cc.s
+
+util/lookup.o: util/lookup.cc.o
+
+.PHONY : util/lookup.o
+
+# target to build an object file
+util/lookup.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o
+.PHONY : util/lookup.cc.o
+
+util/lookup.i: util/lookup.cc.i
+
+.PHONY : util/lookup.i
+
+# target to preprocess a source file
+util/lookup.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.i
+.PHONY : util/lookup.cc.i
+
+util/lookup.s: util/lookup.cc.s
+
+.PHONY : util/lookup.s
+
+# target to generate assembly for a file
+util/lookup.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.s
+.PHONY : util/lookup.cc.s
 
 # Help Target
 help:
@@ -372,6 +426,12 @@ help:
 	@echo "... sock.o"
 	@echo "... sock.i"
 	@echo "... sock.s"
+	@echo "... util/farmhash.o"
+	@echo "... util/farmhash.i"
+	@echo "... util/farmhash.s"
+	@echo "... util/lookup.o"
+	@echo "... util/lookup.i"
+	@echo "... util/lookup.s"
 .PHONY : help
 
 

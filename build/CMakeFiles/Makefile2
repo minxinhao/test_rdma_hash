@@ -74,12 +74,12 @@ clean: CMakeFiles/TEST_RDMA_HASH.dir/clean
 CMakeFiles/TEST_RDMA_HASH.dir/all:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/depend
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target TEST_RDMA_HASH"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target TEST_RDMA_HASH"
 .PHONY : CMakeFiles/TEST_RDMA_HASH.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST_RDMA_HASH.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mxh/test_rdma_hash/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mxh/test_rdma_hash/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TEST_RDMA_HASH.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mxh/test_rdma_hash/build/CMakeFiles 0
 .PHONY : CMakeFiles/TEST_RDMA_HASH.dir/rule
