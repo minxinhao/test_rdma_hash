@@ -15,7 +15,7 @@ roce_flag                 = 1
 
 ************ Start of IB Config ************
 
-	qp[12921] <-> qp[12922]
+	qp[12925] <-> qp[12926]
 
 ************ End of IB Config ************
 
