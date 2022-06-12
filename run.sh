@@ -1,0 +1,2 @@
+echo "mxh" |  sudo -S ./TEST_RDMA_HASH server 192.168.1.88 $1 /dev/dax0.0  \
+& sshpass -p 'mxh' ssh mxh@192.168.1.88 " echo "mxh" | sudo -S ~/test_rdma_hash/TEST_RDMA_HASHclient 192.168.1.88 $1 /dev/dax0.0"

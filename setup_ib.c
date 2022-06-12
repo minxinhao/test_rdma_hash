@@ -41,8 +41,9 @@ int connect_qp_server ()
     /* init local qp_info */
 	local_qp_info.lid	= ib_res.port_attr.lid; 
 	local_qp_info.qp_num = ib_res.qp->qp_num;
-    local_qp_info.interface_id = ib_res.gid.global.interface_id;
-    local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
+    // local_qp_info.interface_id = ib_res.gid.global.interface_id;
+    // local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
+    memcpy(&local_qp_info.gid,(char*)&ib_res.gid,16);
     local_addr.remote_addr = (uint64_t)ib_res.mr->addr;
     local_addr.rkey = ib_res.mr->rkey;
 
@@ -112,8 +113,9 @@ int connect_qp_client ()
 
 	local_qp_info.lid     = ib_res.port_attr.lid; 
 	local_qp_info.qp_num  = ib_res.qp->qp_num; 
-    local_qp_info.interface_id = ib_res.gid.global.interface_id;
-    local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
+    // local_qp_info.interface_id = ib_res.gid.global.interface_id;
+    // local_qp_info.subnet_prefix = ib_res.gid.global.subnet_prefix;
+    memcpy(&local_qp_info.gid,(char*)&ib_res.gid,16);
     local_addr.remote_addr = (uint64_t)ib_res.mr->addr;
     local_addr.rkey = ib_res.mr->rkey;
 

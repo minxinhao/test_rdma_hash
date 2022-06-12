@@ -7,13 +7,17 @@
 is_server                 = true
 msg_size                  = 64
 num_concurr_msgs          = 1000
-sock_port                 = 9999
+sock_port                 = 1111
 roce_flag                 = 1
 
 ************ End of Configuraion ************
 
 
 ************ Start of IB Config ************
+
+	qp[12921] <-> qp[12922]
+
+************ End of IB Config ************
 
 
 ================ Run Finished ================

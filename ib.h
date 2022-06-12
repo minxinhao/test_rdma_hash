@@ -33,8 +33,7 @@ static inline uint64_t ntohll (uint64_t x) {return x; }
 struct QPInfo {
     uint16_t lid;
     uint32_t qp_num;
-    long long interface_id;
-    long long subnet_prefix;
+    uint8_t gid[16];
 }__attribute__ ((packed));
 
 struct RemoteAddr {

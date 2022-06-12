@@ -7,7 +7,7 @@
 is_server                 = false
 msg_size                  = 64
 num_concurr_msgs          = 1000
-sock_port                 = 9999
+sock_port                 = 1111
 roce_flag                 = 1
 
 ************ End of Configuraion ************
@@ -15,6 +15,15 @@ roce_flag                 = 1
 
 ************ IB Config ************
 
+	qp[12922] <-> qp[12921]
+
+************ End of IB Config ************
+
+
+************ Run Client ************
+
+thread[0]: ready to send
+thread[0]: throughput = 365.960629 (MB/s)
 
 ================ Run Finished ================
 

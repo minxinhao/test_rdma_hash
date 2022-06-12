@@ -53,11 +53,13 @@ int modify_qp_to_rts (struct ibv_qp *qp, struct QPInfo* remote_qpinfo, bool roce
 	if(roce_flag){
 		qp_attr.ah_attr.is_global = 1;
 		qp_attr.ah_attr.dlid = 0;
-		qp_attr.ah_attr.grh.dgid.global.interface_id = remote_qpinfo->interface_id;
-		qp_attr.ah_attr.grh.dgid.global.subnet_prefix = remote_qpinfo->subnet_prefix;
-		qp_attr.ah_attr.grh.sgid_index = 0;
+		// qp_attr.ah_attr.grh.dgid.global.interface_id = remote_qpinfo->interface_id;
+		// qp_attr.ah_attr.grh.dgid.global.subnet_prefix = remote_qpinfo->subnet_prefix;
+		memcpy(&qp_attr.ah_attr.grh.dgid,remote_qpinfo->gid,16);
+		qp_attr.ah_attr.grh.sgid_index = 1;
 		qp_attr.ah_attr.grh.hop_limit = 1;
-		log_message("ROCE:interface_id %llu subnet_prefix:%llu",remote_qpinfo->interface_id,remote_qpinfo->subnet_prefix);
+		// log_message("ROCE:interface_id %llu subnet_prefix:%llu",remote_qpinfo->interface_id,remote_qpinfo->subnet_prefix);
+		log_message("ROCE:interface_id %llu subnet_prefix:%llu",qp_attr.ah_attr.grh.dgid.global.interface_id,qp_attr.ah_attr.grh.dgid.global.subnet_prefix);
 	}
 	
 	log_info("dest_qp_num:%u dlid:%u\n",remote_qpinfo->qp_num,remote_qpinfo->lid);
