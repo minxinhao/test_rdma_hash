@@ -6,12 +6,37 @@ CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o
  /home/mxh/test_rdma_hash/NVM.h
  /home/mxh/test_rdma_hash/config.h
  /home/mxh/test_rdma_hash/debug.h
-CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o
- /home/mxh/test_rdma_hash/client.cc
+CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o
+ ../util/farmhash.h
+ ../util/hash.h
+ /home/mxh/test_rdma_hash/NVM.h
+ /home/mxh/test_rdma_hash/RACE.cc
+ /home/mxh/test_rdma_hash/RACE.h
+ /home/mxh/test_rdma_hash/config.h
+ /home/mxh/test_rdma_hash/debug.h
+ /home/mxh/test_rdma_hash/ib.h
+ /home/mxh/test_rdma_hash/setup_ib.h
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o
+ ../util/farmhash.h
+ ../util/hash.h
+ /home/mxh/test_rdma_hash/NVM.h
+ /home/mxh/test_rdma_hash/RACE.h
+ /home/mxh/test_rdma_hash/cceh_client.cc
  /home/mxh/test_rdma_hash/client.h
  /home/mxh/test_rdma_hash/config.h
  /home/mxh/test_rdma_hash/debug.h
  /home/mxh/test_rdma_hash/ib.h
+ /home/mxh/test_rdma_hash/setup_ib.h
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o
+ ../util/farmhash.h
+ ../util/hash.h
+ /home/mxh/test_rdma_hash/NVM.h
+ /home/mxh/test_rdma_hash/RACE.h
+ /home/mxh/test_rdma_hash/cceh_server.cc
+ /home/mxh/test_rdma_hash/config.h
+ /home/mxh/test_rdma_hash/debug.h
+ /home/mxh/test_rdma_hash/ib.h
+ /home/mxh/test_rdma_hash/server.h
  /home/mxh/test_rdma_hash/setup_ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o
  /home/mxh/test_rdma_hash/config.cc
@@ -27,13 +52,6 @@ CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o
  /home/mxh/test_rdma_hash/debug.h
  /home/mxh/test_rdma_hash/ib.h
  /home/mxh/test_rdma_hash/main.cc
- /home/mxh/test_rdma_hash/server.h
- /home/mxh/test_rdma_hash/setup_ib.h
-CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o
- /home/mxh/test_rdma_hash/config.h
- /home/mxh/test_rdma_hash/debug.h
- /home/mxh/test_rdma_hash/ib.h
- /home/mxh/test_rdma_hash/server.cc
  /home/mxh/test_rdma_hash/server.h
  /home/mxh/test_rdma_hash/setup_ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o

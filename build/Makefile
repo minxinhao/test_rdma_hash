@@ -150,32 +150,86 @@ NVM.cc.s:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.s
 .PHONY : NVM.cc.s
 
-client.o: client.cc.o
+RACE.o: RACE.cc.o
 
-.PHONY : client.o
+.PHONY : RACE.o
 
 # target to build an object file
-client.cc.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o
-.PHONY : client.cc.o
+RACE.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o
+.PHONY : RACE.cc.o
 
-client.i: client.cc.i
+RACE.i: RACE.cc.i
 
-.PHONY : client.i
+.PHONY : RACE.i
 
 # target to preprocess a source file
-client.cc.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.i
-.PHONY : client.cc.i
+RACE.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.i
+.PHONY : RACE.cc.i
 
-client.s: client.cc.s
+RACE.s: RACE.cc.s
 
-.PHONY : client.s
+.PHONY : RACE.s
 
 # target to generate assembly for a file
-client.cc.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/client.cc.s
-.PHONY : client.cc.s
+RACE.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.s
+.PHONY : RACE.cc.s
+
+cceh_client.o: cceh_client.cc.o
+
+.PHONY : cceh_client.o
+
+# target to build an object file
+cceh_client.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o
+.PHONY : cceh_client.cc.o
+
+cceh_client.i: cceh_client.cc.i
+
+.PHONY : cceh_client.i
+
+# target to preprocess a source file
+cceh_client.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.i
+.PHONY : cceh_client.cc.i
+
+cceh_client.s: cceh_client.cc.s
+
+.PHONY : cceh_client.s
+
+# target to generate assembly for a file
+cceh_client.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.s
+.PHONY : cceh_client.cc.s
+
+cceh_server.o: cceh_server.cc.o
+
+.PHONY : cceh_server.o
+
+# target to build an object file
+cceh_server.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o
+.PHONY : cceh_server.cc.o
+
+cceh_server.i: cceh_server.cc.i
+
+.PHONY : cceh_server.i
+
+# target to preprocess a source file
+cceh_server.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.i
+.PHONY : cceh_server.cc.i
+
+cceh_server.s: cceh_server.cc.s
+
+.PHONY : cceh_server.s
+
+# target to generate assembly for a file
+cceh_server.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.s
+.PHONY : cceh_server.cc.s
 
 config.o: config.cc.o
 
@@ -257,33 +311,6 @@ main.s: main.cc.s
 main.cc.s:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/main.cc.s
 .PHONY : main.cc.s
-
-server.o: server.cc.o
-
-.PHONY : server.o
-
-# target to build an object file
-server.cc.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o
-.PHONY : server.cc.o
-
-server.i: server.cc.i
-
-.PHONY : server.i
-
-# target to preprocess a source file
-server.cc.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.i
-.PHONY : server.cc.i
-
-server.s: server.cc.s
-
-.PHONY : server.s
-
-# target to generate assembly for a file
-server.cc.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/server.cc.s
-.PHONY : server.cc.s
 
 setup_ib.o: setup_ib.cc.o
 
@@ -405,9 +432,15 @@ help:
 	@echo "... NVM.o"
 	@echo "... NVM.i"
 	@echo "... NVM.s"
-	@echo "... client.o"
-	@echo "... client.i"
-	@echo "... client.s"
+	@echo "... RACE.o"
+	@echo "... RACE.i"
+	@echo "... RACE.s"
+	@echo "... cceh_client.o"
+	@echo "... cceh_client.i"
+	@echo "... cceh_client.s"
+	@echo "... cceh_server.o"
+	@echo "... cceh_server.i"
+	@echo "... cceh_server.s"
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
@@ -417,9 +450,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
 	@echo "... setup_ib.o"
 	@echo "... setup_ib.i"
 	@echo "... setup_ib.s"

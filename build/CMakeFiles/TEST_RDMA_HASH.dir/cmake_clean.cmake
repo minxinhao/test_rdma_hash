@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o"
-  "CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o"
+  "CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o"
+  "CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o"
+  "CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o"
-  "CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o"
   "CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o"

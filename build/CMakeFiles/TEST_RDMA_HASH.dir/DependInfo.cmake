@@ -5,11 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/mxh/test_rdma_hash/NVM.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o"
-  "/home/mxh/test_rdma_hash/client.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o"
+  "/home/mxh/test_rdma_hash/RACE.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o"
+  "/home/mxh/test_rdma_hash/cceh_client.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o"
+  "/home/mxh/test_rdma_hash/cceh_server.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o"
   "/home/mxh/test_rdma_hash/config.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o"
   "/home/mxh/test_rdma_hash/ib.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o"
   "/home/mxh/test_rdma_hash/main.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o"
-  "/home/mxh/test_rdma_hash/server.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o"
   "/home/mxh/test_rdma_hash/setup_ib.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o"
   "/home/mxh/test_rdma_hash/sock.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o"
   "/home/mxh/test_rdma_hash/util/farmhash.cc" "/home/mxh/test_rdma_hash/build/CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o"

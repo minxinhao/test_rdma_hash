@@ -70,22 +70,48 @@ CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/NVM.cc -o CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.s
 
-CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
-CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o: ../client.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o -c /home/mxh/test_rdma_hash/client.cc
+CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
+CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o: ../RACE.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o -c /home/mxh/test_rdma_hash/RACE.cc
 
-CMakeFiles/TEST_RDMA_HASH.dir/client.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST_RDMA_HASH.dir/client.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxh/test_rdma_hash/client.cc > CMakeFiles/TEST_RDMA_HASH.dir/client.cc.i
+CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxh/test_rdma_hash/RACE.cc > CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.i
 
-CMakeFiles/TEST_RDMA_HASH.dir/client.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/client.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/client.cc -o CMakeFiles/TEST_RDMA_HASH.dir/client.cc.s
+CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/RACE.cc -o CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.s
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o: ../cceh_client.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o -c /home/mxh/test_rdma_hash/cceh_client.cc
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxh/test_rdma_hash/cceh_client.cc > CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.i
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/cceh_client.cc -o CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.s
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o: ../cceh_server.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o -c /home/mxh/test_rdma_hash/cceh_server.cc
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxh/test_rdma_hash/cceh_server.cc > CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.i
+
+CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/cceh_server.cc -o CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.s
 
 CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o: ../config.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o -c /home/mxh/test_rdma_hash/config.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/config.cc.i: cmake_force
@@ -98,7 +124,7 @@ CMakeFiles/TEST_RDMA_HASH.dir/config.cc.s: cmake_force
 
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../ib.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o -c /home/mxh/test_rdma_hash/ib.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.i: cmake_force
@@ -111,7 +137,7 @@ CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.s: cmake_force
 
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../main.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o -c /home/mxh/test_rdma_hash/main.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.i: cmake_force
@@ -122,22 +148,9 @@ CMakeFiles/TEST_RDMA_HASH.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/main.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/main.cc -o CMakeFiles/TEST_RDMA_HASH.dir/main.cc.s
 
-CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
-CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o: ../server.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o -c /home/mxh/test_rdma_hash/server.cc
-
-CMakeFiles/TEST_RDMA_HASH.dir/server.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST_RDMA_HASH.dir/server.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mxh/test_rdma_hash/server.cc > CMakeFiles/TEST_RDMA_HASH.dir/server.cc.i
-
-CMakeFiles/TEST_RDMA_HASH.dir/server.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST_RDMA_HASH.dir/server.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mxh/test_rdma_hash/server.cc -o CMakeFiles/TEST_RDMA_HASH.dir/server.cc.s
-
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../setup_ib.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o -c /home/mxh/test_rdma_hash/setup_ib.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.s: cmake_force
 
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../sock.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o -c /home/mxh/test_rdma_hash/sock.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.s: cmake_force
 
 CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o: ../util/farmhash.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o -c /home/mxh/test_rdma_hash/util/farmhash.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.s: cmake_force
 
 CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o: CMakeFiles/TEST_RDMA_HASH.dir/flags.make
 CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o: ../util/lookup.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o -c /home/mxh/test_rdma_hash/util/lookup.cc
 
 CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.i: cmake_force
@@ -190,11 +203,12 @@ CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.s: cmake_force
 # Object files for target TEST_RDMA_HASH
 TEST_RDMA_HASH_OBJECTS = \
 "CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o" \
-"CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o" \
+"CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o" \
+"CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o" \
+"CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o" \
-"CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o" \
 "CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o" \
@@ -204,18 +218,19 @@ TEST_RDMA_HASH_OBJECTS = \
 TEST_RDMA_HASH_EXTERNAL_OBJECTS =
 
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/NVM.cc.o
-TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/client.cc.o
+TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/RACE.cc.o
+TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/cceh_client.cc.o
+TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/cceh_server.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o
-TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/server.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/build.make
 TEST_RDMA_HASH: CMakeFiles/TEST_RDMA_HASH.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable TEST_RDMA_HASH"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mxh/test_rdma_hash/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable TEST_RDMA_HASH"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TEST_RDMA_HASH.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
