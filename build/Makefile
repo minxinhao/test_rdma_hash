@@ -258,6 +258,33 @@ config.cc.s:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/config.cc.s
 .PHONY : config.cc.s
 
+hash.o: hash.cc.o
+
+.PHONY : hash.o
+
+# target to build an object file
+hash.cc.o:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/hash.cc.o
+.PHONY : hash.cc.o
+
+hash.i: hash.cc.i
+
+.PHONY : hash.i
+
+# target to preprocess a source file
+hash.cc.i:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/hash.cc.i
+.PHONY : hash.cc.i
+
+hash.s: hash.cc.s
+
+.PHONY : hash.s
+
+# target to generate assembly for a file
+hash.cc.s:
+	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/hash.cc.s
+.PHONY : hash.cc.s
+
 ib.o: ib.cc.o
 
 .PHONY : ib.o
@@ -366,60 +393,6 @@ sock.cc.s:
 	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.s
 .PHONY : sock.cc.s
 
-util/farmhash.o: util/farmhash.cc.o
-
-.PHONY : util/farmhash.o
-
-# target to build an object file
-util/farmhash.cc.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.o
-.PHONY : util/farmhash.cc.o
-
-util/farmhash.i: util/farmhash.cc.i
-
-.PHONY : util/farmhash.i
-
-# target to preprocess a source file
-util/farmhash.cc.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.i
-.PHONY : util/farmhash.cc.i
-
-util/farmhash.s: util/farmhash.cc.s
-
-.PHONY : util/farmhash.s
-
-# target to generate assembly for a file
-util/farmhash.cc.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/farmhash.cc.s
-.PHONY : util/farmhash.cc.s
-
-util/lookup.o: util/lookup.cc.o
-
-.PHONY : util/lookup.o
-
-# target to build an object file
-util/lookup.cc.o:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.o
-.PHONY : util/lookup.cc.o
-
-util/lookup.i: util/lookup.cc.i
-
-.PHONY : util/lookup.i
-
-# target to preprocess a source file
-util/lookup.cc.i:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.i
-.PHONY : util/lookup.cc.i
-
-util/lookup.s: util/lookup.cc.s
-
-.PHONY : util/lookup.s
-
-# target to generate assembly for a file
-util/lookup.cc.s:
-	$(MAKE) -f CMakeFiles/TEST_RDMA_HASH.dir/build.make CMakeFiles/TEST_RDMA_HASH.dir/util/lookup.cc.s
-.PHONY : util/lookup.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -444,6 +417,9 @@ help:
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... hash.o"
+	@echo "... hash.i"
+	@echo "... hash.s"
 	@echo "... ib.o"
 	@echo "... ib.i"
 	@echo "... ib.s"
@@ -456,12 +432,6 @@ help:
 	@echo "... sock.o"
 	@echo "... sock.i"
 	@echo "... sock.s"
-	@echo "... util/farmhash.o"
-	@echo "... util/farmhash.i"
-	@echo "... util/farmhash.s"
-	@echo "... util/lookup.o"
-	@echo "... util/lookup.i"
-	@echo "... util/lookup.s"
 .PHONY : help
 
 
