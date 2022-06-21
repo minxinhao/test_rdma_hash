@@ -42,27 +42,35 @@ CMakeFiles/TEST_RDMA_HASH.dir/config.cc.o: ../debug.h
 CMakeFiles/TEST_RDMA_HASH.dir/hash.cc.o: ../hash.cc
 CMakeFiles/TEST_RDMA_HASH.dir/hash.cc.o: ../hash.h
 
+CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../RACE.h
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../debug.h
+CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../hash.h
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../ib.cc
 CMakeFiles/TEST_RDMA_HASH.dir/ib.cc.o: ../ib.h
 
+CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../RACE.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../client.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../config.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../debug.h
+CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../hash.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../main.cc
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../server.h
 CMakeFiles/TEST_RDMA_HASH.dir/main.cc.o: ../setup_ib.h
 
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../NVM.h
+CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../RACE.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../config.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../debug.h
+CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../hash.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../setup_ib.cc
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../setup_ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/setup_ib.cc.o: ../sock.h
 
+CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../RACE.h
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../debug.h
+CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../hash.h
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../ib.h
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../sock.cc
 CMakeFiles/TEST_RDMA_HASH.dir/sock.cc.o: ../sock.h
