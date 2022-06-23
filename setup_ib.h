@@ -2,7 +2,6 @@
 #define SETUP_IB_H_
 
 #include <infiniband/verbs.h>
-#include <libpmem.h>
 
 #define MAX_QP_WR 2048
 #define MAX_SRP_WR 2048
@@ -28,10 +27,14 @@ extern struct IBRes ib_res;
 
 void set_msg(char* buf,int msg_size,int id);
 
+
 int  setup_ib ();
 void close_ib_connection ();
 
 int  connect_qp_server ();
 int  connect_qp_client ();
 
+int sync_server_client ();
+
+void wait_poll(uint64_t wr_id);
 #endif /*setup_ib.h*/

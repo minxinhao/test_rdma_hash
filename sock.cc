@@ -1,4 +1,3 @@
-#define _GNU_SOURCE
 #include <sys/socket.h>
 #include <netdb.h>
 #include <arpa/inet.h>
@@ -11,7 +10,7 @@
 ssize_t sock_read (int sock_fd, void *buffer, size_t len)
 {
     ssize_t nr, tot_read;
-    char *buf = buffer; // avoid pointer arithmetic on void pointer                                    
+    char *buf = (char*)buffer; // avoid pointer arithmetic on void pointer                                    
     tot_read = 0;
 
     while (len !=0 && (nr = read(sock_fd, buf, len)) != 0) {
@@ -33,7 +32,7 @@ ssize_t sock_read (int sock_fd, void *buffer, size_t len)
 ssize_t sock_write (int sock_fd, void *buffer, size_t len)
 {
     ssize_t nw, tot_written;
-    const char *buf = buffer;  // avoid pointer arithmetic on void pointer                             
+    const char *buf = (char*)buffer;  // avoid pointer arithmetic on void pointer                             
 
     for (tot_written = 0; tot_written < len; ) {
         nw = write(sock_fd, buf, len-tot_written);
@@ -141,77 +140,25 @@ int sock_create_connect (char *ip_addr, char *port)
     return -1;
 }
 
-int sock_set_qp_info(int sock_fd, struct QPInfo *qp_info)
+int sock_set(int sock_fd, char *ptr,size_t data_size)
 {
     int n;
-    // struct QPInfo tmp_qp_info;
-
-    // tmp_qp_info.lid       = htons(qp_info->lid);
-    // tmp_qp_info.qp_num    = htonl(qp_info->qp_num);
-    // tmp_qp_info.interface_id    = htonll(qp_info->interface_id);
-    // tmp_qp_info.subnet_prefix    = htonll(qp_info->subnet_prefix);
-
-    // n = sock_write(sock_fd, (char *)&tmp_qp_info, sizeof(struct QPInfo));
-    n = sock_write(sock_fd, (char *)qp_info, sizeof(struct QPInfo));
-    check(n==sizeof(struct QPInfo), "write qp_info to socket.");
+    n = sock_write(sock_fd, ptr, data_size);
+    check(n==data_size, "write data to socket.");
 
     return 0;
-
  error:
     return -1;
 }
 
-int sock_get_qp_info(int sock_fd, struct QPInfo *qp_info)
+int sock_get(int sock_fd, char *ptr,size_t data_size)
 {
     int n;
-    // struct QPInfo  tmp_qp_info;
-
-    // n = sock_read(sock_fd, (char *)&tmp_qp_info, sizeof(struct QPInfo));
-    n = sock_read(sock_fd, (char *)qp_info, sizeof(struct QPInfo));
-    check(n==sizeof(struct QPInfo), "read qp_info from socket.");
-
-    // qp_info->lid       = ntohs(tmp_qp_info.lid);
-    // qp_info->qp_num    = ntohl(tmp_qp_info.qp_num);
-    // qp_info->interface_id    = ntohll(tmp_qp_info.interface_id);
-    // qp_info->subnet_prefix    = ntohll(tmp_qp_info.qp_num);
+    n = sock_read(sock_fd,ptr, data_size);
+    check(n==data_size, "read data from socket.");
 
     return 0;
-
  error:
     return -1;
 }
 
-
-int sock_set_remote_addr(int sock_fd, struct RemoteAddr *remote_addr)
-{
-    int n;
-    struct RemoteAddr tmp_remote_addr;
-
-    tmp_remote_addr.remote_addr    = htobe64(remote_addr->remote_addr);
-    tmp_remote_addr.rkey    = htonl(remote_addr->rkey);
-
-    n = sock_write(sock_fd, (char *)&tmp_remote_addr, sizeof(struct RemoteAddr));
-    check(n==sizeof(struct RemoteAddr), "write remote_addr to socket.");
-
-    return 0;
-
- error:
-    return -1;
-}
-
-int sock_get_remote_addr(int sock_fd, struct RemoteAddr *remote_addr)
-{
-    int n;
-    struct RemoteAddr  tmp_remote_addr;
-
-    n = sock_read(sock_fd, (char *)&tmp_remote_addr, sizeof(struct RemoteAddr));
-    check(n==sizeof(struct RemoteAddr), "read remote_addr from socket.");
-
-    remote_addr->remote_addr       = be64toh(tmp_remote_addr.remote_addr);
-    remote_addr->rkey    = ntohl(tmp_remote_addr.rkey);
-
-    return 0;
-
- error:
-    return -1;
-}

@@ -1,6 +1,6 @@
 #ifndef CLIENT_H_
 #define CLIENT_H_
 
-int run_client ();
+int cceh_client();
 
 #endif /* client.h */

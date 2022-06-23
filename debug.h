@@ -26,8 +26,6 @@ extern FILE *log_fp;
 
 #define log_info(M, ...) fprintf(stderr, "" M "\n", ##__VA_ARGS__)
 
-#define log_file(M, ...) {fprintf(log_fp, "" M "\n", ##__VA_ARGS__);fflush(log_fp);}
-
 #define log_message(M, ...) {printf("" M "\n", ##__VA_ARGS__);}
 
 #define sentinel(M, ...) {log_err(M, ##__VA_ARGS__); errno=0; goto error;}
@@ -38,10 +36,8 @@ extern FILE *log_fp;
 #define debug_detail(M, ...) fprintf(stderr, "[DEBUG] (%s:%d:%s) " M "\n",\
                   __FILE__, __LINE__, __func__, ##__VA_ARGS__)
 #define debug(M, ...) fprintf(stderr, "[DEBUG] " M "\n", ##__VA_ARGS__)
-#define log(M, ...) {log_info (M, ##__VA_ARGS__); log_file (M, ##__VA_ARGS__);}
 #else
 #define debug(M, ...)
-#define log(M, ...) {log_file (M, ##__VA_ARGS__);}
 #endif
 
 #endif /* DEBUG_H_ */

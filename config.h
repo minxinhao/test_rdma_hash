@@ -10,10 +10,12 @@ struct ConfigInfo {
     char *ip_address;         /* ip of server */
     char *sock_port;         /* socket port number */
     bool roce_flag;         /* type of underlying net */
-    
-    int  msg_size;           /* the size of each echo message */
-    int  num_concurr_msgs;   /* the number of messages can be sent concurrently */
+    bool is_pm;         /* type of underlying net */
     char* pmem_path; // path of pmem file to be mapped into buf
+
+    //sock file description used for tcp connect
+    int sockfd	;
+    int peer_sockfd;
 }__attribute__((aligned(64)));
 
 extern struct ConfigInfo config_info;

@@ -13,12 +13,8 @@ ssize_t sock_write (int sock_fd, void *buffer, size_t len);
 int sock_create_bind (char *ip_addr,char *port);
 int sock_create_connect (char *ip_addr, char *port);
 
-int sock_set_qp_info(int sock_fd, struct QPInfo *qp_info);
-int sock_get_qp_info(int sock_fd, struct QPInfo *qp_info);
-
-int sock_set_remote_addr(int sock_fd, struct RemoteAddr *remote_addr);
-int sock_get_remote_addr(int sock_fd, struct RemoteAddr *remote_addr);
-
+int sock_set(int sock_fd, char *ptr,size_t data_size);
+int sock_get(int sock_fd, char *ptr,size_t data_size);
 
 
 #endif /* SOCK_H_ */
